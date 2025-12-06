@@ -1,3 +1,4 @@
+import CallToAction from "@/components/CallToAction";
 import TeamSection from "./Team";
 
 export default function AboutPage() {
@@ -142,6 +143,7 @@ export default function AboutPage() {
       </section>
       <CoreValues />
       <TeamSection />
+      <CallToAction />
     </div>
   );
 }
