@@ -3,22 +3,22 @@ import Image from "next/image";
 export default function FeaturedProjects() {
   const projects = [
     {
-      image: "/images/foodfleet.png",
+      image: "/images/Rectangle 11.png",
       title: "FoodFleet",
       subtitle: "Food Delivery Platform",
     },
     {
-      image: "/images/ecarehub.png",
+      image: "/images/Rectangle 12.png",
       title: "E Care Hub",
       subtitle: "Healthcare Platform",
     },
     {
-      image: "/images/hisabwala.png",
+      image: "/images/Rectangle 13.png",
       title: "HisabWala",
       subtitle: "Business Accounting",
     },
     {
-      image: "/images/techflow.png",
+      image: "/images/Rectangle 14.png",
       title: "TechFlow",
       subtitle: "Project Management",
     },
@@ -40,10 +40,10 @@ export default function FeaturedProjects() {
           {projects.map((project, i) => (
             <article
               key={i}
-              className="bg-white rounded-lg shadow-sm overflow-hidden border"
+              className="bg-white rounded-2xl shadow-sm overflow-hidden"
             >
               {/* Image */}
-              <div className="w-full h-48 bg-gray-100 overflow-hidden relative">
+              <div className="w-full h-48 bg-white overflow-hidden relative">
                 <Image
                   src={project.image}
                   alt={project.title}
