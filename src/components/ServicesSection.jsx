@@ -54,7 +54,7 @@ export default function ServicesSection() {
                 {item.desc}
               </p>
 
-              <button className="text-blue-600 font-medium text-sm flex items-center gap-1 hover:underline">
+              <button className="text-blue-600 font-medium text-sm flex items-center gap-1 hover:underline cursor-pointer">
                 Learn More →
               </button>
             </div>
