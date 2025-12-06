@@ -74,7 +74,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Line */}
-      <div className="border-t border-white mt-10 pt-6 text-center text-sm">
+      <div className="border-t border-white mt-3 pt-6 text-center text-sm">
         Copyright © 2025 TechRiv. All rights reserved. Built with{" "}
         <span className="text-red-500">❤</span> by TechRiv Team
       </div>
