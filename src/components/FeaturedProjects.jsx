@@ -26,16 +26,16 @@ export default function FeaturedProjects() {
   ];
 
   return (
-    <section className="py-20 bg-[#F2F2F2]">
-      <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900">
+    <section className="py-12 sm:py-20 bg-[#F2F2F2]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-900">
           Featured Projects
         </h2>
-        <p className="text-center text-gray-600 mt-2 mb-12">
+        <p className="text-center text-gray-600 mt-2 mb-8 sm:mb-12 text-sm sm:text-base">
           Showcase of our premium work across various industries
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {projects.map((project, i) => (
             <article
               key={i}
@@ -69,8 +69,8 @@ export default function FeaturedProjects() {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <button className="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg font-medium hover:bg-blue-50 transition flex items-center gap-2 mx-auto">
+        <div className="text-center mt-8 sm:mt-12">
+          <button className="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg font-medium hover:bg-blue-50 transition flex items-center gap-2 mx-auto text-sm sm:text-base">
             View All Projects →
           </button>
         </div>

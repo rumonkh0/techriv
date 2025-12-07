@@ -47,36 +47,38 @@ export default function TeamSection() {
   ];
 
   return (
-    <section className="relative py-20 bg-[linear-gradient(135deg,#E1D9FD_0%,#F8FAFC_27%,#D8DFFC_50%,#F8FAFC_100%)]">
+    <section className="relative py-12 sm:py-20 bg-[linear-gradient(135deg,#E1D9FD_0%,#F8FAFC_27%,#D8DFFC_50%,#F8FAFC_100%)]">
       {/* Background soft gradient elements */}
       <div
         className="
-    absolute right-40 top-5
+    absolute right-10 sm:right-40 top-5
     blur-[20px]
-    w-[300px] h-[300px]
+    w-[200px] sm:w-[300px] h-[200px] sm:h-[300px]
     bg-[radial-gradient(circle,#F4D7FC_29%,#E4E9FC_100%)]
     rounded-full
   "
       ></div>
 
       {/* Header */}
-      <div className="relative z-10 text-center max-w-3xl mx-auto mb-14 px-4">
-        <h2 className="text-4xl font-bold text-gray-900">Meet Our Team</h2>
-        <p className="text-gray-600 text-lg mt-3">
+      <div className="relative z-10 text-center max-w-3xl mx-auto mb-10 sm:mb-14 px-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
+          Meet Our Team
+        </h2>
+        <p className="text-gray-600 text-base sm:text-lg mt-3">
           Talented professionals dedicated to delivering excellence and driving
           your success.
         </p>
       </div>
       {/* Lead & Stats Row */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 mb-12">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 mb-8 sm:mb-12">
         {/* LEAD MEMBER CARD */}
         <div
           className="
-            flex items-center gap-6 bg-white p-6 rounded-2xl border border-gray-100 col-span-1 lg:col-span-8
+            flex flex-col sm:flex-row items-center gap-4 sm:gap-6 bg-white p-4 sm:p-6 rounded-2xl border border-gray-100 col-span-1 lg:col-span-8
             shadow-[0_0_20px_6px_#F4D7FC]
           "
         >
-          <div className="relative h-full aspect-square rounded-full overflow-hidden">
+          <div className="relative w-24 h-24 sm:h-full sm:w-auto sm:aspect-square rounded-full overflow-hidden shrink-0">
             <Image
               src={lead.img}
               alt={lead.name}
@@ -86,8 +88,8 @@ export default function TeamSection() {
             />
           </div>
 
-          <div>
-            <div className="flex items-center gap-3 mb-1">
+          <div className="text-center sm:text-left">
+            <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 mb-1">
               <h3 className="text-lg font-semibold text-gray-900">
                 {lead.name}
               </h3>
@@ -101,7 +103,7 @@ export default function TeamSection() {
             </p>
 
             {/* Socials */}
-            <div className="flex gap-4 text-gray-500 text-lg">
+            <div className="flex gap-4 text-gray-500 text-lg justify-center sm:justify-start">
               {lead.socials.map((s, i) => (
                 <a key={i} href={s.url} className="hover:text-gray-700">
                   {s.icon}
@@ -114,11 +116,11 @@ export default function TeamSection() {
         {/* STATS CARD */}
         <div
           className="
-            bg-white p-6 rounded-2xl border border-gray-100 col-span-1 lg:col-span-4
+            bg-white p-4 sm:p-6 rounded-2xl border border-gray-100 col-span-1 lg:col-span-4
             shadow-[0_0_20px_6px_#F4D7FC]
           "
         >
-          <p className="text-gray-600 mb-6 text-center">
+          <p className="text-gray-600 mb-4 sm:mb-6 text-center text-sm sm:text-base">
             We&apos;re a lean, multi-disciplinary team.
           </p>
 
@@ -135,11 +137,11 @@ export default function TeamSection() {
         </div>
       </div>
       {/* TEAM MEMBER GRID */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-8 sm:mb-12">
         {team.map((member, i) => (
           <div
             key={i}
-            className="bg-white p-8 rounded-2xl border border-gray-200 text-center"
+            className="bg-white p-6 sm:p-8 rounded-2xl border border-gray-200 text-center"
           >
             <div className="w-20 h-20 mx-auto bg-gray-200 rounded-full mb-4">
               <Image

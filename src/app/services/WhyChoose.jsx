@@ -23,19 +23,19 @@ export default function WhyChoose() {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-12 sm:py-20 bg-white">
       {/* Section Header */}
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-gray-900">
+      <div className="text-center mb-8 sm:mb-12 px-4">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
           Why Choose TechRiv?
         </h2>
-        <p className="text-gray-600 mt-2">
+        <p className="text-gray-600 mt-2 text-sm sm:text-base">
           We stand out through our commitment to excellence and client success.
         </p>
       </div>
 
       {/* Grid */}
-      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-10">
         {items.map((item, i) => (
           <div key={i} className="flex gap-4">
             {/* Icon box */}

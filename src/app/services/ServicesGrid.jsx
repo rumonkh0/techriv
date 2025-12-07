@@ -105,23 +105,23 @@ export default function ServicesGrid() {
   blur-[100px]
   bg-[radial-gradient(circle,#3753CB_0%,#5E5DD5_48%,#007FBB_100%)]"
       ></div>
-      <div className="max-w-7xl mx-auto px-4 py-16 overflow-hidden">
-        <div className="relative z-10 text-center max-w-3xl mx-auto pt-10 pb-35">
+      <div className="max-w-7xl mx-auto px-4 py-12 sm:py-16 overflow-hidden">
+        <div className="relative z-10 text-center max-w-3xl mx-auto pt-6 sm:pt-10 pb-16 sm:pb-35 px-4">
           {/* Gradient Heading */}
           <h2
-            className="text-7xl font-semibold  bg-[linear-gradient(90deg,#3753CB_0%,#5E5DD5_48%,#007FBB_100%)]
+            className="text-4xl sm:text-5xl md:text-7xl font-semibold bg-[linear-gradient(90deg,#3753CB_0%,#5E5DD5_48%,#007FBB_100%)]
   bg-clip-text text-transparent"
           >
             Our Services
           </h2>
 
           {/* Subtitle */}
-          <p className="text-gray-600 mt-3 text-lg">
+          <p className="text-gray-600 mt-3 text-base sm:text-lg">
             Comprehensive digital solutions designed to elevate your brand and
             drive business growth.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {services.map((service, i) => (
             <div
               key={i}

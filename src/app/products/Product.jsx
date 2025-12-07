@@ -127,12 +127,12 @@ export default function ProductSection() {
       : products.filter((p) => p.category === active);
 
   return (
-    <section className="pb-20 bg-[#F3F6FF]">
+    <section className="pb-12 sm:pb-20 bg-[#F3F6FF]">
       {/* Tabs */}
       <ProductTabs active={active} setActive={setActive} />
 
       {/* Grid */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-6">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-10 px-4 sm:px-6">
         {filtered.map((item, i) => (
           <ProductCard key={i} item={item} />
         ))}

@@ -23,14 +23,13 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6">
-
+    <section className="py-12 sm:py-16 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-900">
           Our Core Services
         </h2>
-        <p className="text-center text-gray-600 mt-2 mb-10">
+        <p className="text-center text-gray-600 mt-2 mb-8 sm:mb-10 text-sm sm:text-base">
           Comprehensive digital solutions tailored to your business needs
         </p>
 
@@ -46,13 +45,9 @@ export default function ServicesSection() {
                 {item.icon}
               </div>
 
-              <h3 className="font-semibold text-gray-900 mb-2">
-                {item.title}
-              </h3>
+              <h3 className="font-semibold text-gray-900 mb-2">{item.title}</h3>
 
-              <p className="text-sm text-[#535353] mb-4">
-                {item.desc}
-              </p>
+              <p className="text-sm text-[#535353] mb-4">{item.desc}</p>
 
               <button className="text-blue-600 bg-[#E5EDF9] px-2.5 py-3 rounded-2xl font-medium text-sm flex items-center gap-1 hover:underline cursor-pointer">
                 Learn More →
@@ -60,7 +55,6 @@ export default function ServicesSection() {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

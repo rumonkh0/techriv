@@ -1,10 +1,10 @@
 export default function Footer() {
   return (
-    <footer className="bg-black text-gray-300 pt-17 pb-10 px-20">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 px-10">
+    <footer className="bg-black text-gray-300 pt-12 sm:pt-17 pb-8 sm:pb-10 px-4 sm:px-8 lg:px-20">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 px-4 sm:px-10">
         {/* Logo + Description */}
-        <div>
-          <h2 className="text-xl font-semibold text-white px-10">TechRiv</h2>
+        <div className="sm:col-span-2 lg:col-span-1">
+          <h2 className="text-xl font-semibold text-white">TechRiv</h2>
           <p className="mt-3 text-sm font-light leading-relaxed">
             Empowering digital transformation through design and innovation.
           </p>
@@ -57,24 +57,16 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold text-white mb-3">Follow Us</h3>
           <div className="flex items-center gap-4 text-xl">
-            <SocialWrapper >
-              🌐
-            </SocialWrapper>
-            <SocialWrapper>
-              💼
-            </SocialWrapper>
-            <SocialWrapper>
-              📸
-            </SocialWrapper>
-            <SocialWrapper>
-              🏀
-            </SocialWrapper>
+            <SocialWrapper>🌐</SocialWrapper>
+            <SocialWrapper>💼</SocialWrapper>
+            <SocialWrapper>📸</SocialWrapper>
+            <SocialWrapper>🏀</SocialWrapper>
           </div>
         </div>
       </div>
 
       {/* Bottom Line */}
-      <div className="border-t border-white mt-3 pt-6 text-center text-sm">
+      <div className="border-t border-white/20 mt-8 pt-6 text-center text-xs sm:text-sm px-4">
         Copyright © 2025 TechRiv. All rights reserved. Built with{" "}
         <span className="text-red-500">❤</span> by TechRiv Team
       </div>

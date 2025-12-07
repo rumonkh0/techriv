@@ -64,20 +64,20 @@ export default function ComparePackages() {
   };
 
   return (
-    <section className="py-20 bg-[#F2F2F2]">
+    <section className="py-12 sm:py-20 bg-[#F2F2F2]">
       {/* Header */}
-      <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-gray-900">
+      <div className="text-center mb-8 sm:mb-12 px-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
           Compare Our Packages
         </h2>
-        <p className="text-gray-600 text-lg mt-2">
+        <p className="text-gray-600 text-base sm:text-lg mt-2">
           Choose the perfect package for your needs
         </p>
       </div>
 
       {/* Table */}
-      <div className="max-w-5xl mx-auto px-6">
-        <table className="w-full text-left border-collapse">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 overflow-x-auto">
+        <table className="w-full text-left border-collapse min-w-[500px]">
           {/* Table Head */}
           <thead>
             <tr className="border-b border-gray-200">

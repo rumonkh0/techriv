@@ -34,37 +34,37 @@ export default function ProcessSection() {
   ];
 
   return (
-    <section className="bg-[#F4F7FF] py-20">
+    <section className="bg-[#F4F7FF] py-12 sm:py-20">
       {/* Section Header */}
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-gray-900">Our Process</h2>
-        <p className="text-gray-600 mt-2">
+      <div className="text-center mb-8 sm:mb-12 px-4">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
+          Our Process
+        </h2>
+        <p className="text-gray-600 mt-2 text-sm sm:text-base">
           A structured approach to deliver exceptional results every time.
         </p>
       </div>
 
       {/* Steps Grid */}
-      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         {steps.map((step, i) => (
           <div
             key={i}
             className={`
-              relative bg-white p-8 rounded-2xl shadow-sm 
+              relative bg-white p-6 sm:p-8 rounded-2xl shadow-sm 
               border border-gray-200
             `}
           >
-            {/* Connector (hidden on last card) */}
-            <div className="absolute right-[-18px] top-1/2 -translate-y-1/2 w-6 h-[1.5px] bg-blue-200"></div>
+            {/* Connector (hidden on mobile and last card) */}
+            <div className="hidden lg:block absolute right-[-18px] top-1/2 -translate-y-1/2 w-6 h-[1.5px] bg-blue-200"></div>
 
             {/* Number */}
-            <p className="text-5xl font-bold text-[#CCDBF3] mb-4">
+            <p className="text-4xl sm:text-5xl font-bold text-[#CCDBF3] mb-4">
               {step.number}
             </p>
 
             {/* Title */}
-            <h3 className="text-lg font-medium text-gray-900">
-              {step.title}
-            </h3>
+            <h3 className="text-lg font-medium text-gray-900">{step.title}</h3>
 
             {/* Description */}
             <p className="text-[#535353] text-sm mt-2 leading-relaxed">

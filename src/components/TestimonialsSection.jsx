@@ -24,19 +24,18 @@ export default function TestimonialsSection() {
   ];
 
   return (
-    <section className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
-
+    <section className="py-12 sm:py-16 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-900">
           Client Testimonials
         </h2>
-        <p className="text-center text-gray-600 mt-2 mb-12">
+        <p className="text-center text-gray-600 mt-2 mb-8 sm:mb-12 text-sm sm:text-base">
           What our clients say about working with TechRiv
         </p>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {testimonials.map((item, i) => (
             <div
               key={i}
@@ -61,7 +60,6 @@ export default function TestimonialsSection() {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
