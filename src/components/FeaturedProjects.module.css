@@ -1,0 +1,44 @@
+.cornerBr {
+  position: absolute;
+  width: 80px;
+  height: 78px;
+  background-color: #ededed; /* ✅ Visible gray */
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 10px;
+
+  bottom: 0;
+  right: 0;
+
+  z-index: 30; /* ✅ Above image */
+  pointer-events: none; /* So it doesn't block clicks */
+}
+
+/* ✅ REQUIRED for pseudo elements to appear */
+.cornerBr::after,
+.cornerBr::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+
+  background-image: radial-gradient(
+    circle at top left,
+    transparent 70%,
+    #ededed 71%
+  );
+
+  z-index: 40;
+  display: block;
+}
+
+/* ✅ Right notch */
+.cornerBr::after {
+  right: 80px;
+  bottom: 0;
+}
+
+/* ✅ Bottom notch */
+.cornerBr::before {
+  right: 0;
+  bottom: 78px;
+}
